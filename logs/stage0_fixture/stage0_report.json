@@ -1,0 +1,157 @@
+{
+  "stage": "0",
+  "fixture": true,
+  "question": "Do last year\u2019s Re-TRAC county-to-facility shipments beat a mileage-plus-population assignment on held-out quarters?",
+  "contestant": "last_year",
+  "bar": "mileage_plus_population",
+  "ridge": false,
+  "hgb": false,
+  "sklearn_contestant": false,
+  "live_retrac_login": false,
+  "winter_page_hero": false,
+  "xlsx_ok": true,
+  "coords_ok": true,
+  "units": {
+    "skill": "rmse_tons"
+  },
+  "figures": [
+    "scatter.png",
+    "rmse_bars.png"
+  ],
+  "n_rows": 120,
+  "n_train": 72,
+  "n_holdout": 24,
+  "n_confirm": 24,
+  "n_facilities_j": 2,
+  "n_holdout_only_facilities": 0,
+  "n_gis": 2,
+  "n_centroid": 0,
+  "holdout": {
+    "n_cells": 24,
+    "n_last_year": 24,
+    "n_skip_last_year": 0,
+    "last_year": {
+      "rmse_tons": 1.9851303017595618,
+      "mae_tons": 1.1324815278583718
+    },
+    "bar": {
+      "rmse_tons": 11.27091759677894,
+      "mae_tons": 10.162816824731673
+    },
+    "bar_all": {
+      "rmse_tons": 11.27091759677894,
+      "mae_tons": 10.162816824731673,
+      "n": 24
+    },
+    "origin_total": {
+      "last_year_rmse": 1.88229984953132,
+      "bar_rmse": 0.0,
+      "n": 12
+    },
+    "last_year_beats_bar": true,
+    "by_county": [
+      {
+        "origin": "Alpha",
+        "last_year_rmse": 3.1243978480700165,
+        "bar_rmse": 13.587205586206508,
+        "bar_all_rmse": 13.587205586206508,
+        "n_ly": 8,
+        "n_bar": 8,
+        "n_bar_all": 8,
+        "holdout_tons": 316.6466005902199
+      },
+      {
+        "origin": "Beta",
+        "last_year_rmse": 1.34669716295502,
+        "bar_rmse": 13.62158672220103,
+        "bar_all_rmse": 13.62158672220103,
+        "n_ly": 8,
+        "n_bar": 8,
+        "n_bar_all": 8,
+        "holdout_tons": 163.1143140584615
+      },
+      {
+        "origin": "Gamma",
+        "last_year_rmse": 0.4967612939394307,
+        "bar_rmse": 3.307713704034657,
+        "bar_all_rmse": 3.307713704034657,
+        "n_ly": 8,
+        "n_bar": 8,
+        "n_bar_all": 8,
+        "holdout_tons": 80.23654293682617
+      }
+    ]
+  },
+  "confirm": {
+    "n_cells": 24,
+    "n_last_year": 24,
+    "n_skip_last_year": 0,
+    "last_year": {
+      "rmse_tons": 2.6075158866187755,
+      "mae_tons": 1.7927698758271624
+    },
+    "bar": {
+      "rmse_tons": 10.268526393517407,
+      "mae_tons": 9.308246247724915
+    },
+    "bar_all": {
+      "rmse_tons": 10.268526393517407,
+      "mae_tons": 9.308246247724915,
+      "n": 24
+    },
+    "origin_total": {
+      "last_year_rmse": 2.4724456408139157,
+      "bar_rmse": 0.0,
+      "n": 12
+    },
+    "last_year_beats_bar": true,
+    "by_county": [
+      {
+        "origin": "Alpha",
+        "last_year_rmse": 1.626690979567901,
+        "bar_rmse": 13.038697347287517,
+        "bar_all_rmse": 13.038697347287517,
+        "n_ly": 8,
+        "n_bar": 8,
+        "n_bar_all": 8,
+        "holdout_tons": 321.4018876981572
+      },
+      {
+        "origin": "Beta",
+        "last_year_rmse": 3.345651414433303,
+        "bar_rmse": 11.551690594812577,
+        "bar_all_rmse": 11.551690594812577,
+        "n_ly": 8,
+        "n_bar": 8,
+        "n_bar_all": 8,
+        "holdout_tons": 153.7908318714691
+      },
+      {
+        "origin": "Gamma",
+        "last_year_rmse": 2.560841730174038,
+        "bar_rmse": 3.588693184245051,
+        "bar_all_rmse": 3.588693184245051,
+        "n_ly": 8,
+        "n_bar": 8,
+        "n_bar_all": 8,
+        "holdout_tons": 78.4834537207283
+      }
+    ]
+  },
+  "confirm_in_train": false,
+  "confirm_in_j": false,
+  "random_split": false,
+  "train_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "holdout_years": [
+    2024
+  ],
+  "confirm_years": [
+    2025
+  ],
+  "origin_pop_cancels": true,
+  "last_year_beats_bar": true
+}

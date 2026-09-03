@@ -1,0 +1,1957 @@
+{
+  "stage": "C",
+  "fixture": false,
+  "question": "Do last year\u2019s Re-TRAC county-to-facility shipments beat a mileage-plus-population assignment on held-out quarters?",
+  "contestant": "last_year",
+  "bar": "mileage_plus_population",
+  "ridge": false,
+  "hgb": false,
+  "sklearn_contestant": false,
+  "live_retrac_login": false,
+  "winter_page_hero": false,
+  "xlsx_ok": true,
+  "coords_ok": true,
+  "units": {
+    "skill": "rmse_tons"
+  },
+  "figures": [
+    "scatter.png",
+    "rmse_bars.png"
+  ],
+  "n_rows": 27926,
+  "n_train": 16064,
+  "n_holdout": 5754,
+  "n_confirm": 6108,
+  "n_facilities_j": 152,
+  "n_holdout_only_facilities": 3,
+  "n_gis": 97,
+  "n_centroid": 60,
+  "holdout": {
+    "n_cells": 5754,
+    "n_last_year": 4370,
+    "n_skip_last_year": 1384,
+    "last_year": {
+      "rmse_tons": 6504.679657977136,
+      "mae_tons": 1144.0122059496566
+    },
+    "bar": {
+      "rmse_tons": 16632.95864542123,
+      "mae_tons": 4455.262803248225
+    },
+    "bar_all": {
+      "rmse_tons": 14914.480935432031,
+      "mae_tons": 3581.7078852142035,
+      "n": 5754
+    },
+    "origin_total": {
+      "last_year_rmse": 23313.2990159868,
+      "bar_rmse": 0.0,
+      "n": 368
+    },
+    "last_year_beats_bar": true,
+    "by_county": [
+      {
+        "origin": "Marion",
+        "last_year_rmse": 10534.390838961406,
+        "bar_rmse": 45658.77278155548,
+        "bar_all_rmse": 43018.07417807525,
+        "n_ly": 150,
+        "n_bar": 150,
+        "n_bar_all": 169,
+        "holdout_tons": 3404326.4899999998
+      },
+      {
+        "origin": "Lake",
+        "last_year_rmse": 10981.492553306152,
+        "bar_rmse": 49904.01750259596,
+        "bar_all_rmse": 45538.0994169684,
+        "n_ly": 103,
+        "n_bar": 103,
+        "n_bar_all": 124,
+        "holdout_tons": 2165374.88
+      },
+      {
+        "origin": "Porter",
+        "last_year_rmse": 29584.991027393156,
+        "bar_rmse": 33283.81732557877,
+        "bar_all_rmse": 39504.47673924859,
+        "n_ly": 93,
+        "n_bar": 93,
+        "n_bar_all": 107,
+        "holdout_tons": 1581567.92
+      },
+      {
+        "origin": "Gibson",
+        "last_year_rmse": 15596.760956078304,
+        "bar_rmse": 76280.9409146314,
+        "bar_all_rmse": 65160.447108718625,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 48,
+        "holdout_tons": 1540946.05
+      },
+      {
+        "origin": "Vermillion",
+        "last_year_rmse": 9361.88107684458,
+        "bar_rmse": 39896.760810309126,
+        "bar_all_rmse": 36037.66098333737,
+        "n_ly": 31,
+        "n_bar": 31,
+        "n_bar_all": 38,
+        "holdout_tons": 770947.34
+      },
+      {
+        "origin": "Hamilton",
+        "last_year_rmse": 4041.282829935774,
+        "bar_rmse": 14688.858497964751,
+        "bar_all_rmse": 13089.54424196234,
+        "n_ly": 92,
+        "n_bar": 92,
+        "n_bar_all": 116,
+        "holdout_tons": 707352.74
+      },
+      {
+        "origin": "Elkhart",
+        "last_year_rmse": 9252.2123996463,
+        "bar_rmse": 21294.371045810258,
+        "bar_all_rmse": 18953.328211526386,
+        "n_ly": 80,
+        "n_bar": 80,
+        "n_bar_all": 101,
+        "holdout_tons": 684880.01
+      },
+      {
+        "origin": "Allen",
+        "last_year_rmse": 1796.3364619919087,
+        "bar_rmse": 19595.802460916508,
+        "bar_all_rmse": 17435.619753784747,
+        "n_ly": 87,
+        "n_bar": 87,
+        "n_bar_all": 110,
+        "holdout_tons": 624663.92
+      },
+      {
+        "origin": "Tippecanoe",
+        "last_year_rmse": 3055.6260947555675,
+        "bar_rmse": 7286.6383601698935,
+        "bar_all_rmse": 7499.382305499009,
+        "n_ly": 86,
+        "n_bar": 86,
+        "n_bar_all": 121,
+        "holdout_tons": 480835.55
+      },
+      {
+        "origin": "Floyd",
+        "last_year_rmse": 10277.85296218447,
+        "bar_rmse": 18889.641641041548,
+        "bar_all_rmse": 18085.96816673904,
+        "n_ly": 44,
+        "n_bar": 44,
+        "n_bar_all": 48,
+        "holdout_tons": 448110.65
+      },
+      {
+        "origin": "Sullivan",
+        "last_year_rmse": 20408.24679750388,
+        "bar_rmse": 25009.275913369245,
+        "bar_all_rmse": 22450.44056255628,
+        "n_ly": 29,
+        "n_bar": 29,
+        "n_bar_all": 36,
+        "holdout_tons": 444983.06
+      },
+      {
+        "origin": "St. Joseph",
+        "last_year_rmse": 1616.7450850441098,
+        "bar_rmse": 11105.262028156176,
+        "bar_all_rmse": 9393.947932980254,
+        "n_ly": 70,
+        "n_bar": 70,
+        "n_bar_all": 98,
+        "holdout_tons": 428236.27
+      },
+      {
+        "origin": "Vanderburgh",
+        "last_year_rmse": 1645.5564761707049,
+        "bar_rmse": 13600.870072693644,
+        "bar_all_rmse": 12612.059606992401,
+        "n_ly": 49,
+        "n_bar": 49,
+        "n_bar_all": 57,
+        "holdout_tons": 380763.35
+      },
+      {
+        "origin": "Madison",
+        "last_year_rmse": 1613.6212924967401,
+        "bar_rmse": 11118.550096857192,
+        "bar_all_rmse": 9941.24585932716,
+        "n_ly": 87,
+        "n_bar": 87,
+        "n_bar_all": 109,
+        "holdout_tons": 367594.1
+      },
+      {
+        "origin": "Warrick",
+        "last_year_rmse": 19511.46661281811,
+        "bar_rmse": 27585.44337681934,
+        "bar_all_rmse": 26887.040989377332,
+        "n_ly": 38,
+        "n_bar": 38,
+        "n_bar_all": 40,
+        "holdout_tons": 356235.7
+      },
+      {
+        "origin": "Monroe",
+        "last_year_rmse": 3427.333837028384,
+        "bar_rmse": 9385.484299191643,
+        "bar_all_rmse": 8448.314141349783,
+        "n_ly": 68,
+        "n_bar": 68,
+        "n_bar_all": 85,
+        "holdout_tons": 336434.64
+      },
+      {
+        "origin": "Boone",
+        "last_year_rmse": 4694.962400358271,
+        "bar_rmse": 8898.280874890837,
+        "bar_all_rmse": 8055.343426655594,
+        "n_ly": 86,
+        "n_bar": 86,
+        "n_bar_all": 105,
+        "holdout_tons": 312927.26
+      },
+      {
+        "origin": "Clark",
+        "last_year_rmse": 3054.1001644711077,
+        "bar_rmse": 12256.631389199225,
+        "bar_all_rmse": 11171.487380195971,
+        "n_ly": 49,
+        "n_bar": 49,
+        "n_bar_all": 59,
+        "holdout_tons": 299360.47
+      },
+      {
+        "origin": "Delaware",
+        "last_year_rmse": 1258.0629943384433,
+        "bar_rmse": 11057.068453303245,
+        "bar_all_rmse": 9693.433232209498,
+        "n_ly": 63,
+        "n_bar": 63,
+        "n_bar_all": 82,
+        "holdout_tons": 287884.26999999996
+      },
+      {
+        "origin": "LaPorte",
+        "last_year_rmse": 2372.476410913054,
+        "bar_rmse": 9334.531913527513,
+        "bar_all_rmse": 8400.616586091943,
+        "n_ly": 72,
+        "n_bar": 72,
+        "n_bar_all": 93,
+        "holdout_tons": 286185.05
+      },
+      {
+        "origin": "Hendricks",
+        "last_year_rmse": 1091.5274331095711,
+        "bar_rmse": 8785.492537373819,
+        "bar_all_rmse": 7706.187313444493,
+        "n_ly": 78,
+        "n_bar": 78,
+        "n_bar_all": 107,
+        "holdout_tons": 259798.69999999998
+      },
+      {
+        "origin": "Knox",
+        "last_year_rmse": 6167.525395321854,
+        "bar_rmse": 9119.256495937167,
+        "bar_all_rmse": 8326.817125171829,
+        "n_ly": 55,
+        "n_bar": 55,
+        "n_bar_all": 66,
+        "holdout_tons": 244668.54
+      },
+      {
+        "origin": "Cass",
+        "last_year_rmse": 2222.3784853902657,
+        "bar_rmse": 3856.3020841480916,
+        "bar_all_rmse": 4058.5685646849715,
+        "n_ly": 47,
+        "n_bar": 47,
+        "n_bar_all": 76,
+        "holdout_tons": 240377.15
+      },
+      {
+        "origin": "Johnson",
+        "last_year_rmse": 1500.415186509751,
+        "bar_rmse": 6190.148339851195,
+        "bar_all_rmse": 5821.097170797014,
+        "n_ly": 99,
+        "n_bar": 99,
+        "n_bar_all": 112,
+        "holdout_tons": 234228.97
+      },
+      {
+        "origin": "DeKalb",
+        "last_year_rmse": 2763.3213321044723,
+        "bar_rmse": 13539.586621486013,
+        "bar_all_rmse": 10303.37072589711,
+        "n_ly": 33,
+        "n_bar": 33,
+        "n_bar_all": 57,
+        "holdout_tons": 226958.67
+      },
+      {
+        "origin": "Howard",
+        "last_year_rmse": 5342.917765792586,
+        "bar_rmse": 2924.8789670469855,
+        "bar_all_rmse": 5356.537460281754,
+        "n_ly": 59,
+        "n_bar": 59,
+        "n_bar_all": 91,
+        "holdout_tons": 208195.72
+      },
+      {
+        "origin": "Hancock",
+        "last_year_rmse": 2197.0462151012357,
+        "bar_rmse": 6141.104017516948,
+        "bar_all_rmse": 5488.012435346045,
+        "n_ly": 75,
+        "n_bar": 75,
+        "n_bar_all": 94,
+        "holdout_tons": 204256.86000000002
+      },
+      {
+        "origin": "Wabash",
+        "last_year_rmse": 1782.857394053026,
+        "bar_rmse": 8937.57225913004,
+        "bar_all_rmse": 6990.017049437881,
+        "n_ly": 44,
+        "n_bar": 44,
+        "n_bar_all": 72,
+        "holdout_tons": 196823.43
+      },
+      {
+        "origin": "Vigo",
+        "last_year_rmse": 3841.931965773938,
+        "bar_rmse": 10776.835655243392,
+        "bar_all_rmse": 9315.654551022237,
+        "n_ly": 59,
+        "n_bar": 59,
+        "n_bar_all": 79,
+        "holdout_tons": 191703.53
+      },
+      {
+        "origin": "Noble",
+        "last_year_rmse": 671.2283885009855,
+        "bar_rmse": 6523.598533670996,
+        "bar_all_rmse": 5874.300416530694,
+        "n_ly": 54,
+        "n_bar": 54,
+        "n_bar_all": 75,
+        "holdout_tons": 184821.81
+      },
+      {
+        "origin": "Kosciusko",
+        "last_year_rmse": 1996.4576545584607,
+        "bar_rmse": 4873.195639531388,
+        "bar_all_rmse": 4111.276109059657,
+        "n_ly": 71,
+        "n_bar": 71,
+        "n_bar_all": 100,
+        "holdout_tons": 178838.29
+      },
+      {
+        "origin": "Shelby",
+        "last_year_rmse": 1154.600041662155,
+        "bar_rmse": 8190.843098314452,
+        "bar_all_rmse": 7681.407781880228,
+        "n_ly": 80,
+        "n_bar": 80,
+        "n_bar_all": 91,
+        "holdout_tons": 173463.21
+      },
+      {
+        "origin": "Bartholomew",
+        "last_year_rmse": 1809.406211944872,
+        "bar_rmse": 5478.320256735861,
+        "bar_all_rmse": 5141.178682610157,
+        "n_ly": 81,
+        "n_bar": 81,
+        "n_bar_all": 92,
+        "holdout_tons": 146306.30000000002
+      },
+      {
+        "origin": "Spencer",
+        "last_year_rmse": 3907.666127325874,
+        "bar_rmse": 14380.224208506686,
+        "bar_all_rmse": 13196.503501590676,
+        "n_ly": 16,
+        "n_bar": 16,
+        "n_bar_all": 19,
+        "holdout_tons": 142520.81
+      },
+      {
+        "origin": "Jasper",
+        "last_year_rmse": 12617.734882250175,
+        "bar_rmse": 3906.4758827144433,
+        "bar_all_rmse": 3285.2864157356753,
+        "n_ly": 53,
+        "n_bar": 53,
+        "n_bar_all": 75,
+        "holdout_tons": 127703.75
+      },
+      {
+        "origin": "Wayne",
+        "last_year_rmse": 937.1288543795024,
+        "bar_rmse": 4931.365771002627,
+        "bar_all_rmse": 4271.261060998539,
+        "n_ly": 47,
+        "n_bar": 47,
+        "n_bar_all": 63,
+        "holdout_tons": 117770.31999999999
+      },
+      {
+        "origin": "Jackson",
+        "last_year_rmse": 342.5679042596462,
+        "bar_rmse": 3689.5958946908377,
+        "bar_all_rmse": 3300.7435821235135,
+        "n_ly": 52,
+        "n_bar": 52,
+        "n_bar_all": 65,
+        "holdout_tons": 108478.34
+      },
+      {
+        "origin": "Henry",
+        "last_year_rmse": 261.29774491564217,
+        "bar_rmse": 3530.249775664714,
+        "bar_all_rmse": 3011.398418106054,
+        "n_ly": 50,
+        "n_bar": 50,
+        "n_bar_all": 69,
+        "holdout_tons": 105563.03
+      },
+      {
+        "origin": "Montgomery",
+        "last_year_rmse": 876.4857913910212,
+        "bar_rmse": 3154.1864442844244,
+        "bar_all_rmse": 2757.8068479971857,
+        "n_ly": 58,
+        "n_bar": 58,
+        "n_bar_all": 82,
+        "holdout_tons": 97805.22
+      },
+      {
+        "origin": "Posey",
+        "last_year_rmse": 1815.9008889143702,
+        "bar_rmse": 6759.129282126899,
+        "bar_all_rmse": 5712.748047529738,
+        "n_ly": 25,
+        "n_bar": 25,
+        "n_bar_all": 35,
+        "holdout_tons": 94676.25
+      },
+      {
+        "origin": "Whitley",
+        "last_year_rmse": 1236.1150321627015,
+        "bar_rmse": 2853.205388104423,
+        "bar_all_rmse": 2443.0304331829634,
+        "n_ly": 57,
+        "n_bar": 57,
+        "n_bar_all": 79,
+        "holdout_tons": 93005.03
+      },
+      {
+        "origin": "Clay",
+        "last_year_rmse": 2153.438076706567,
+        "bar_rmse": 5786.269270120167,
+        "bar_all_rmse": 4513.353281734558,
+        "n_ly": 31,
+        "n_bar": 31,
+        "n_bar_all": 51,
+        "holdout_tons": 91672.05
+      },
+      {
+        "origin": "Marshall",
+        "last_year_rmse": 665.9601029756847,
+        "bar_rmse": 3437.846860381104,
+        "bar_all_rmse": 3119.1865007972565,
+        "n_ly": 65,
+        "n_bar": 65,
+        "n_bar_all": 79,
+        "holdout_tons": 82894.24
+      },
+      {
+        "origin": "Lawrence",
+        "last_year_rmse": 2691.405739598909,
+        "bar_rmse": 4008.1264163286287,
+        "bar_all_rmse": 3634.813763190644,
+        "n_ly": 37,
+        "n_bar": 37,
+        "n_bar_all": 45,
+        "holdout_tons": 82835.03
+      },
+      {
+        "origin": "Grant",
+        "last_year_rmse": 387.4247549411066,
+        "bar_rmse": 2954.30223664603,
+        "bar_all_rmse": 2427.959797208979,
+        "n_ly": 68,
+        "n_bar": 68,
+        "n_bar_all": 101,
+        "holdout_tons": 81267.34999999999
+      },
+      {
+        "origin": "Jefferson",
+        "last_year_rmse": 5283.0077488084735,
+        "bar_rmse": 3177.388220457557,
+        "bar_all_rmse": 2918.7164039850495,
+        "n_ly": 54,
+        "n_bar": 54,
+        "n_bar_all": 64,
+        "holdout_tons": 76719.81
+      },
+      {
+        "origin": "Fulton",
+        "last_year_rmse": 1535.0993688299604,
+        "bar_rmse": 6088.812857789107,
+        "bar_all_rmse": 4799.020909518806,
+        "n_ly": 28,
+        "n_bar": 28,
+        "n_bar_all": 46,
+        "holdout_tons": 76559.95999999999
+      },
+      {
+        "origin": "Putnam",
+        "last_year_rmse": 1185.2931052434687,
+        "bar_rmse": 1503.433433166921,
+        "bar_all_rmse": 1308.4215805973406,
+        "n_ly": 61,
+        "n_bar": 61,
+        "n_bar_all": 81,
+        "holdout_tons": 74451.43
+      },
+      {
+        "origin": "Morgan",
+        "last_year_rmse": 573.6793169027702,
+        "bar_rmse": 1261.0798574168768,
+        "bar_all_rmse": 1183.8811463658276,
+        "n_ly": 69,
+        "n_bar": 69,
+        "n_bar_all": 86,
+        "holdout_tons": 57868.48
+      },
+      {
+        "origin": "Dubois",
+        "last_year_rmse": 676.1284976274851,
+        "bar_rmse": 4165.8575308051,
+        "bar_all_rmse": 3425.4834218315264,
+        "n_ly": 25,
+        "n_bar": 25,
+        "n_bar_all": 37,
+        "holdout_tons": 56321.94
+      },
+      {
+        "origin": "Huntington",
+        "last_year_rmse": 812.2271850387115,
+        "bar_rmse": 1952.7987144062388,
+        "bar_all_rmse": 1510.18808641068,
+        "n_ly": 44,
+        "n_bar": 44,
+        "n_bar_all": 75,
+        "holdout_tons": 52092.979999999996
+      },
+      {
+        "origin": "Clinton",
+        "last_year_rmse": 724.2719027639644,
+        "bar_rmse": 2136.468723487598,
+        "bar_all_rmse": 1765.2464297228776,
+        "n_ly": 45,
+        "n_bar": 45,
+        "n_bar_all": 66,
+        "holdout_tons": 50430.24
+      },
+      {
+        "origin": "Perry",
+        "last_year_rmse": 2414.631102210543,
+        "bar_rmse": 5968.028531685322,
+        "bar_all_rmse": 4682.361635254294,
+        "n_ly": 16,
+        "n_bar": 16,
+        "n_bar_all": 26,
+        "holdout_tons": 49287.32
+      },
+      {
+        "origin": "Orange",
+        "last_year_rmse": 452.05249762313775,
+        "bar_rmse": 2297.2640442509696,
+        "bar_all_rmse": 2080.8563502272964,
+        "n_ly": 41,
+        "n_bar": 41,
+        "n_bar_all": 50,
+        "holdout_tons": 47468.37
+      },
+      {
+        "origin": "Greene",
+        "last_year_rmse": 480.0747118090251,
+        "bar_rmse": 1193.2230408674861,
+        "bar_all_rmse": 1097.193208668324,
+        "n_ly": 54,
+        "n_bar": 54,
+        "n_bar_all": 64,
+        "holdout_tons": 45589.66
+      },
+      {
+        "origin": "Daviess",
+        "last_year_rmse": 435.1069158536602,
+        "bar_rmse": 2424.9068991352087,
+        "bar_all_rmse": 2093.813006242675,
+        "n_ly": 38,
+        "n_bar": 38,
+        "n_bar_all": 51,
+        "holdout_tons": 44437.18
+      },
+      {
+        "origin": "Scott",
+        "last_year_rmse": 451.15877992573917,
+        "bar_rmse": 1646.7613765296069,
+        "bar_all_rmse": 1568.923142950649,
+        "n_ly": 49,
+        "n_bar": 49,
+        "n_bar_all": 54,
+        "holdout_tons": 41822.57
+      },
+      {
+        "origin": "Adams",
+        "last_year_rmse": 357.6341468226006,
+        "bar_rmse": 1468.3119599209476,
+        "bar_all_rmse": 1180.9499400121629,
+        "n_ly": 34,
+        "n_bar": 34,
+        "n_bar_all": 53,
+        "holdout_tons": 40059.56
+      },
+      {
+        "origin": "Dearborn",
+        "last_year_rmse": 526.9990301337419,
+        "bar_rmse": 2791.6475759143345,
+        "bar_all_rmse": 2298.1305231150354,
+        "n_ly": 21,
+        "n_bar": 21,
+        "n_bar_all": 31,
+        "holdout_tons": 37516.95
+      },
+      {
+        "origin": "Wells",
+        "last_year_rmse": 725.0637558195313,
+        "bar_rmse": 1831.3258841732738,
+        "bar_all_rmse": 1526.161453830139,
+        "n_ly": 32,
+        "n_bar": 32,
+        "n_bar_all": 49,
+        "holdout_tons": 34990.97
+      },
+      {
+        "origin": "Randolph",
+        "last_year_rmse": 866.9638864470933,
+        "bar_rmse": 2919.1067243775756,
+        "bar_all_rmse": 2517.4275574727953,
+        "n_ly": 29,
+        "n_bar": 29,
+        "n_bar_all": 39,
+        "holdout_tons": 34367.0
+      },
+      {
+        "origin": "Jennings",
+        "last_year_rmse": 280.48775678271596,
+        "bar_rmse": 1468.9106249682904,
+        "bar_all_rmse": 1369.9728115528844,
+        "n_ly": 40,
+        "n_bar": 40,
+        "n_bar_all": 46,
+        "holdout_tons": 31925.81
+      },
+      {
+        "origin": "LaGrange",
+        "last_year_rmse": 1116.6083307911083,
+        "bar_rmse": 1401.2389716083444,
+        "bar_all_rmse": 1299.4426344020753,
+        "n_ly": 38,
+        "n_bar": 38,
+        "n_bar_all": 45,
+        "holdout_tons": 30059.47
+      },
+      {
+        "origin": "Steuben",
+        "last_year_rmse": 326.7268866915906,
+        "bar_rmse": 1313.8097052409744,
+        "bar_all_rmse": 1141.0634195347857,
+        "n_ly": 39,
+        "n_bar": 39,
+        "n_bar_all": 52,
+        "holdout_tons": 30051.0
+      },
+      {
+        "origin": "Miami",
+        "last_year_rmse": 402.5711916124638,
+        "bar_rmse": 1057.2660242240656,
+        "bar_all_rmse": 969.0248220928906,
+        "n_ly": 43,
+        "n_bar": 43,
+        "n_bar_all": 59,
+        "holdout_tons": 29564.38
+      },
+      {
+        "origin": "Blackford",
+        "last_year_rmse": 2709.9339546386245,
+        "bar_rmse": 1339.792138719939,
+        "bar_all_rmse": 1059.8542955410007,
+        "n_ly": 30,
+        "n_bar": 30,
+        "n_bar_all": 48,
+        "holdout_tons": 28499.37
+      },
+      {
+        "origin": "Rush",
+        "last_year_rmse": 299.0947906900899,
+        "bar_rmse": 2022.5068205951152,
+        "bar_all_rmse": 1883.005403646296,
+        "n_ly": 39,
+        "n_bar": 39,
+        "n_bar_all": 45,
+        "holdout_tons": 28440.16
+      },
+      {
+        "origin": "Decatur",
+        "last_year_rmse": 278.6476669223162,
+        "bar_rmse": 2160.8892570250073,
+        "bar_all_rmse": 1728.8321856884065,
+        "n_ly": 32,
+        "n_bar": 32,
+        "n_bar_all": 50,
+        "holdout_tons": 28117.04
+      },
+      {
+        "origin": "White",
+        "last_year_rmse": 406.8412406832543,
+        "bar_rmse": 1542.7219637937874,
+        "bar_all_rmse": 1218.8682178220383,
+        "n_ly": 29,
+        "n_bar": 29,
+        "n_bar_all": 54,
+        "holdout_tons": 26950.27
+      },
+      {
+        "origin": "Harrison",
+        "last_year_rmse": 322.10080831852076,
+        "bar_rmse": 1516.211218692328,
+        "bar_all_rmse": 1420.7868998089173,
+        "n_ly": 36,
+        "n_bar": 36,
+        "n_bar_all": 41,
+        "holdout_tons": 25787.48
+      },
+      {
+        "origin": "Pike",
+        "last_year_rmse": 974.7925749815344,
+        "bar_rmse": 2463.3232655594447,
+        "bar_all_rmse": 2193.7764678685544,
+        "n_ly": 23,
+        "n_bar": 23,
+        "n_bar_all": 29,
+        "holdout_tons": 25437.32
+      },
+      {
+        "origin": "Newton",
+        "last_year_rmse": 223.86356171412376,
+        "bar_rmse": 1507.658440526205,
+        "bar_all_rmse": 1376.6006503377798,
+        "n_ly": 30,
+        "n_bar": 30,
+        "n_bar_all": 36,
+        "holdout_tons": 25299.35
+      },
+      {
+        "origin": "Pulaski",
+        "last_year_rmse": 599.4144718028307,
+        "bar_rmse": 1719.5066661262242,
+        "bar_all_rmse": 1335.3049705329877,
+        "n_ly": 30,
+        "n_bar": 30,
+        "n_bar_all": 50,
+        "holdout_tons": 25199.940000000002
+      },
+      {
+        "origin": "Fayette",
+        "last_year_rmse": 1021.7858397764412,
+        "bar_rmse": 1157.816503631277,
+        "bar_all_rmse": 1006.6261815853054,
+        "n_ly": 34,
+        "n_bar": 34,
+        "n_bar_all": 45,
+        "holdout_tons": 25159.37
+      },
+      {
+        "origin": "Jay",
+        "last_year_rmse": 388.55925934283516,
+        "bar_rmse": 1608.1689489296375,
+        "bar_all_rmse": 1202.7803570409242,
+        "n_ly": 19,
+        "n_bar": 19,
+        "n_bar_all": 34,
+        "holdout_tons": 24716.329999999998
+      },
+      {
+        "origin": "Washington",
+        "last_year_rmse": 577.265998216717,
+        "bar_rmse": 1352.7478079361997,
+        "bar_all_rmse": 1281.553015712856,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 39,
+        "holdout_tons": 24355.4
+      },
+      {
+        "origin": "Martin",
+        "last_year_rmse": 240.10907969385198,
+        "bar_rmse": 1332.2451736093776,
+        "bar_all_rmse": 1231.1490652949035,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 41,
+        "holdout_tons": 21034.46
+      },
+      {
+        "origin": "Tipton",
+        "last_year_rmse": 196.8849507082363,
+        "bar_rmse": 399.1037407810049,
+        "bar_all_rmse": 421.2747109151544,
+        "n_ly": 39,
+        "n_bar": 39,
+        "n_bar_all": 64,
+        "holdout_tons": 16089.58
+      },
+      {
+        "origin": "Starke",
+        "last_year_rmse": 423.79675371236965,
+        "bar_rmse": 869.3274792376307,
+        "bar_all_rmse": 758.556935772841,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 46,
+        "holdout_tons": 15499.24
+      },
+      {
+        "origin": "Ripley",
+        "last_year_rmse": 163.26932236585796,
+        "bar_rmse": 1177.1164603702116,
+        "bar_all_rmse": 1063.2686099158557,
+        "n_ly": 31,
+        "n_bar": 31,
+        "n_bar_all": 38,
+        "holdout_tons": 14462.45
+      },
+      {
+        "origin": "Fountain",
+        "last_year_rmse": 295.1429138679287,
+        "bar_rmse": 619.2015438767841,
+        "bar_all_rmse": 538.4822468425027,
+        "n_ly": 31,
+        "n_bar": 31,
+        "n_bar_all": 41,
+        "holdout_tons": 14411.52
+      },
+      {
+        "origin": "Franklin",
+        "last_year_rmse": 974.1408805081907,
+        "bar_rmse": 957.542717918204,
+        "bar_all_rmse": 738.4138749321442,
+        "n_ly": 22,
+        "n_bar": 22,
+        "n_bar_all": 37,
+        "holdout_tons": 12241.2
+      },
+      {
+        "origin": "Carroll",
+        "last_year_rmse": 173.64297970930346,
+        "bar_rmse": 177.28699984125222,
+        "bar_all_rmse": 383.4412993053006,
+        "n_ly": 43,
+        "n_bar": 43,
+        "n_bar_all": 58,
+        "holdout_tons": 12205.16
+      },
+      {
+        "origin": "Parke",
+        "last_year_rmse": 149.22752607642093,
+        "bar_rmse": 587.5307154451549,
+        "bar_all_rmse": 531.9112307534141,
+        "n_ly": 36,
+        "n_bar": 36,
+        "n_bar_all": 44,
+        "holdout_tons": 11632.68
+      },
+      {
+        "origin": "Owen",
+        "last_year_rmse": 196.6780319260585,
+        "bar_rmse": 453.6393600861328,
+        "bar_all_rmse": 391.11646456768995,
+        "n_ly": 26,
+        "n_bar": 26,
+        "n_bar_all": 45,
+        "holdout_tons": 9663.62
+      },
+      {
+        "origin": "Brown",
+        "last_year_rmse": 282.5640529080678,
+        "bar_rmse": 551.5427967327558,
+        "bar_all_rmse": 485.43087253725537,
+        "n_ly": 24,
+        "n_bar": 24,
+        "n_bar_all": 31,
+        "holdout_tons": 7799.53
+      },
+      {
+        "origin": "Crawford",
+        "last_year_rmse": 159.62418815819012,
+        "bar_rmse": 389.2177204117448,
+        "bar_all_rmse": 351.60312722658483,
+        "n_ly": 31,
+        "n_bar": 31,
+        "n_bar_all": 38,
+        "holdout_tons": 7428.07
+      },
+      {
+        "origin": "Switzerland",
+        "last_year_rmse": 293.82676723786506,
+        "bar_rmse": 681.4487339315898,
+        "bar_all_rmse": 532.7456975394109,
+        "n_ly": 11,
+        "n_bar": 11,
+        "n_bar_all": 18,
+        "holdout_tons": 4851.9
+      },
+      {
+        "origin": "Benton",
+        "last_year_rmse": 94.37748619241773,
+        "bar_rmse": 334.7547710214276,
+        "bar_all_rmse": 281.78216891129176,
+        "n_ly": 17,
+        "n_bar": 17,
+        "n_bar_all": 24,
+        "holdout_tons": 3075.02
+      },
+      {
+        "origin": "Warren",
+        "last_year_rmse": 142.35132534605282,
+        "bar_rmse": 196.75563444352318,
+        "bar_all_rmse": 157.26109987920756,
+        "n_ly": 18,
+        "n_bar": 18,
+        "n_bar_all": 30,
+        "holdout_tons": 2799.04
+      },
+      {
+        "origin": "Union",
+        "last_year_rmse": 44.8801943372575,
+        "bar_rmse": 114.26095546358358,
+        "bar_all_rmse": 110.8504125896498,
+        "n_ly": 16,
+        "n_bar": 16,
+        "n_bar_all": 17,
+        "holdout_tons": 1713.01
+      },
+      {
+        "origin": "Ohio",
+        "last_year_rmse": 12.923451873757777,
+        "bar_rmse": 91.42188952289145,
+        "bar_all_rmse": 79.1781694203038,
+        "n_ly": 12,
+        "n_bar": 12,
+        "n_bar_all": 16,
+        "holdout_tons": 699.47
+      }
+    ]
+  },
+  "confirm": {
+    "n_cells": 6108,
+    "n_last_year": 4805,
+    "n_skip_last_year": 1303,
+    "last_year": {
+      "rmse_tons": 8058.993654056084,
+      "mae_tons": 1153.3052591050987
+    },
+    "bar": {
+      "rmse_tons": 16227.1749518369,
+      "mae_tons": 4193.1806022179235
+    },
+    "bar_all": {
+      "rmse_tons": 14506.505066455124,
+      "mae_tons": 3405.4115892582754,
+      "n": 6108
+    },
+    "origin_total": {
+      "last_year_rmse": 27734.39821884093,
+      "bar_rmse": 0.0,
+      "n": 368
+    },
+    "last_year_beats_bar": true,
+    "by_county": [
+      {
+        "origin": "Marion",
+        "last_year_rmse": 7902.514497012755,
+        "bar_rmse": 42957.13967003225,
+        "bar_all_rmse": 39112.72868272162,
+        "n_ly": 155,
+        "n_bar": 155,
+        "n_bar_all": 187,
+        "holdout_tons": 3139235.04
+      },
+      {
+        "origin": "Lake",
+        "last_year_rmse": 6502.940028123384,
+        "bar_rmse": 43669.704964524084,
+        "bar_all_rmse": 42387.849209621185,
+        "n_ly": 111,
+        "n_bar": 111,
+        "n_bar_all": 127,
+        "holdout_tons": 2104279.23
+      },
+      {
+        "origin": "Gibson",
+        "last_year_rmse": 22855.259732300725,
+        "bar_rmse": 78811.17591604804,
+        "bar_all_rmse": 71381.76422577066,
+        "n_ly": 41,
+        "n_bar": 41,
+        "n_bar_all": 50,
+        "holdout_tons": 1734498.75
+      },
+      {
+        "origin": "Porter",
+        "last_year_rmse": 30482.69777691964,
+        "bar_rmse": 22835.615455549363,
+        "bar_all_rmse": 21758.996859192586,
+        "n_ly": 98,
+        "n_bar": 98,
+        "n_bar_all": 112,
+        "holdout_tons": 1219184.23
+      },
+      {
+        "origin": "Elkhart",
+        "last_year_rmse": 4098.696639014482,
+        "bar_rmse": 21266.12511836446,
+        "bar_all_rmse": 19370.099461427388,
+        "n_ly": 86,
+        "n_bar": 86,
+        "n_bar_all": 106,
+        "holdout_tons": 697071.46
+      },
+      {
+        "origin": "Allen",
+        "last_year_rmse": 2067.761086749386,
+        "bar_rmse": 18385.74428481747,
+        "bar_all_rmse": 16451.5954468053,
+        "n_ly": 96,
+        "n_bar": 96,
+        "n_bar_all": 120,
+        "holdout_tons": 657912.0
+      },
+      {
+        "origin": "Hamilton",
+        "last_year_rmse": 4433.286174985211,
+        "bar_rmse": 12189.306656833944,
+        "bar_all_rmse": 11090.767237771302,
+        "n_ly": 100,
+        "n_bar": 100,
+        "n_bar_all": 121,
+        "holdout_tons": 643073.36
+      },
+      {
+        "origin": "Vermillion",
+        "last_year_rmse": 14698.65437491719,
+        "bar_rmse": 30628.08468563525,
+        "bar_all_rmse": 28030.23039464955,
+        "n_ly": 36,
+        "n_bar": 36,
+        "n_bar_all": 43,
+        "holdout_tons": 641293.33
+      },
+      {
+        "origin": "Spencer",
+        "last_year_rmse": 69375.86652900145,
+        "bar_rmse": 70331.54853785725,
+        "bar_all_rmse": 58661.86813595492,
+        "n_ly": 16,
+        "n_bar": 16,
+        "n_bar_all": 23,
+        "holdout_tons": 639167.86
+      },
+      {
+        "origin": "Sullivan",
+        "last_year_rmse": 22036.520690634974,
+        "bar_rmse": 34941.10493148177,
+        "bar_all_rmse": 30650.214614561944,
+        "n_ly": 30,
+        "n_bar": 30,
+        "n_bar_all": 39,
+        "holdout_tons": 606697.26
+      },
+      {
+        "origin": "St. Joseph",
+        "last_year_rmse": 9758.459161988194,
+        "bar_rmse": 16394.40930912992,
+        "bar_all_rmse": 14836.543577626322,
+        "n_ly": 81,
+        "n_bar": 81,
+        "n_bar_all": 99,
+        "holdout_tons": 540351.49
+      },
+      {
+        "origin": "Tippecanoe",
+        "last_year_rmse": 2157.2992916874095,
+        "bar_rmse": 8261.68158468335,
+        "bar_all_rmse": 7639.197247821491,
+        "n_ly": 100,
+        "n_bar": 100,
+        "n_bar_all": 117,
+        "holdout_tons": 471211.74
+      },
+      {
+        "origin": "Vanderburgh",
+        "last_year_rmse": 8787.835975879292,
+        "bar_rmse": 19240.393618883158,
+        "bar_all_rmse": 17355.566856891513,
+        "n_ly": 48,
+        "n_bar": 48,
+        "n_bar_all": 59,
+        "holdout_tons": 462335.43
+      },
+      {
+        "origin": "Madison",
+        "last_year_rmse": 3461.3045889399846,
+        "bar_rmse": 10929.5870024615,
+        "bar_all_rmse": 10064.839973637536,
+        "n_ly": 100,
+        "n_bar": 100,
+        "n_bar_all": 118,
+        "holdout_tons": 389054.01
+      },
+      {
+        "origin": "Boone",
+        "last_year_rmse": 3890.778914854794,
+        "bar_rmse": 10717.34610452181,
+        "bar_all_rmse": 9777.10695869913,
+        "n_ly": 89,
+        "n_bar": 89,
+        "n_bar_all": 107,
+        "holdout_tons": 384787.15
+      },
+      {
+        "origin": "Warrick",
+        "last_year_rmse": 5834.024532152985,
+        "bar_rmse": 29458.958555637757,
+        "bar_all_rmse": 28272.29950539207,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 38,
+        "holdout_tons": 375500.02999999997
+      },
+      {
+        "origin": "Monroe",
+        "last_year_rmse": 2345.89896727916,
+        "bar_rmse": 10160.829115078248,
+        "bar_all_rmse": 9277.90816996243,
+        "n_ly": 70,
+        "n_bar": 70,
+        "n_bar_all": 84,
+        "holdout_tons": 337058.58
+      },
+      {
+        "origin": "Jefferson",
+        "last_year_rmse": 20639.304078200967,
+        "bar_rmse": 21225.075358957714,
+        "bar_all_rmse": 20205.8938861382,
+        "n_ly": 58,
+        "n_bar": 58,
+        "n_bar_all": 64,
+        "holdout_tons": 312376.7
+      },
+      {
+        "origin": "LaPorte",
+        "last_year_rmse": 2510.091058519299,
+        "bar_rmse": 9578.536703923015,
+        "bar_all_rmse": 8946.585528092399,
+        "n_ly": 82,
+        "n_bar": 82,
+        "n_bar_all": 94,
+        "holdout_tons": 308586.14
+      },
+      {
+        "origin": "Hendricks",
+        "last_year_rmse": 1466.8780434960156,
+        "bar_rmse": 9460.084290857989,
+        "bar_all_rmse": 8918.586294083172,
+        "n_ly": 86,
+        "n_bar": 86,
+        "n_bar_all": 102,
+        "holdout_tons": 292879.81
+      },
+      {
+        "origin": "Delaware",
+        "last_year_rmse": 708.1223732182939,
+        "bar_rmse": 10758.344256673152,
+        "bar_all_rmse": 9096.402100990059,
+        "n_ly": 65,
+        "n_bar": 65,
+        "n_bar_all": 91,
+        "holdout_tons": 284955.69
+      },
+      {
+        "origin": "Knox",
+        "last_year_rmse": 4460.934884457651,
+        "bar_rmse": 12230.027979928498,
+        "bar_all_rmse": 11072.382098112037,
+        "n_ly": 59,
+        "n_bar": 59,
+        "n_bar_all": 72,
+        "holdout_tons": 284737.66
+      },
+      {
+        "origin": "Johnson",
+        "last_year_rmse": 1819.0117963574992,
+        "bar_rmse": 7261.78075575776,
+        "bar_all_rmse": 6669.477732904519,
+        "n_ly": 106,
+        "n_bar": 106,
+        "n_bar_all": 126,
+        "holdout_tons": 276070.12
+      },
+      {
+        "origin": "Clark",
+        "last_year_rmse": 2898.425237635351,
+        "bar_rmse": 11777.746593158248,
+        "bar_all_rmse": 10224.990848797228,
+        "n_ly": 52,
+        "n_bar": 52,
+        "n_bar_all": 69,
+        "holdout_tons": 274858.67
+      },
+      {
+        "origin": "DeKalb",
+        "last_year_rmse": 1890.1273272743003,
+        "bar_rmse": 10091.463040764891,
+        "bar_all_rmse": 8122.466291517565,
+        "n_ly": 44,
+        "n_bar": 44,
+        "n_bar_all": 68,
+        "holdout_tons": 208410.37
+      },
+      {
+        "origin": "Vigo",
+        "last_year_rmse": 3303.429448487645,
+        "bar_rmse": 11348.282100701254,
+        "bar_all_rmse": 10361.310736049416,
+        "n_ly": 65,
+        "n_bar": 65,
+        "n_bar_all": 78,
+        "holdout_tons": 206869.89
+      },
+      {
+        "origin": "Howard",
+        "last_year_rmse": 1666.5286747813532,
+        "bar_rmse": 5352.372610876071,
+        "bar_all_rmse": 4598.82071565003,
+        "n_ly": 73,
+        "n_bar": 73,
+        "n_bar_all": 99,
+        "holdout_tons": 202388.43
+      },
+      {
+        "origin": "Shelby",
+        "last_year_rmse": 1027.721028431119,
+        "bar_rmse": 9004.339438185125,
+        "bar_all_rmse": 8507.89940579872,
+        "n_ly": 83,
+        "n_bar": 83,
+        "n_bar_all": 93,
+        "holdout_tons": 194572.87
+      },
+      {
+        "origin": "Hancock",
+        "last_year_rmse": 1658.006005125118,
+        "bar_rmse": 5224.091078430269,
+        "bar_all_rmse": 4696.389684287555,
+        "n_ly": 84,
+        "n_bar": 84,
+        "n_bar_all": 104,
+        "holdout_tons": 193279.47
+      },
+      {
+        "origin": "Cass",
+        "last_year_rmse": 3715.9258959924127,
+        "bar_rmse": 3915.9321792108217,
+        "bar_all_rmse": 3392.928407767929,
+        "n_ly": 57,
+        "n_bar": 57,
+        "n_bar_all": 76,
+        "holdout_tons": 192232.56
+      },
+      {
+        "origin": "Wabash",
+        "last_year_rmse": 3786.994733351527,
+        "bar_rmse": 6076.689008805547,
+        "bar_all_rmse": 5429.072400190811,
+        "n_ly": 59,
+        "n_bar": 59,
+        "n_bar_all": 74,
+        "holdout_tons": 183440.22999999998
+      },
+      {
+        "origin": "Noble",
+        "last_year_rmse": 697.8128995158869,
+        "bar_rmse": 5544.754022571449,
+        "bar_all_rmse": 4877.691495348735,
+        "n_ly": 65,
+        "n_bar": 65,
+        "n_bar_all": 84,
+        "holdout_tons": 172801.56
+      },
+      {
+        "origin": "Kosciusko",
+        "last_year_rmse": 755.5681159515195,
+        "bar_rmse": 4318.581848810903,
+        "bar_all_rmse": 3895.1864902020307,
+        "n_ly": 87,
+        "n_bar": 87,
+        "n_bar_all": 107,
+        "holdout_tons": 171568.74
+      },
+      {
+        "origin": "Bartholomew",
+        "last_year_rmse": 1625.5581955640441,
+        "bar_rmse": 5831.935614409904,
+        "bar_all_rmse": 5472.847558330199,
+        "n_ly": 81,
+        "n_bar": 81,
+        "n_bar_all": 92,
+        "holdout_tons": 142282.85
+      },
+      {
+        "origin": "Montgomery",
+        "last_year_rmse": 2197.0712709570225,
+        "bar_rmse": 4575.772169696394,
+        "bar_all_rmse": 4074.5481916563867,
+        "n_ly": 68,
+        "n_bar": 68,
+        "n_bar_all": 86,
+        "holdout_tons": 128696.13
+      },
+      {
+        "origin": "Floyd",
+        "last_year_rmse": 27960.71870229293,
+        "bar_rmse": 5434.409069789894,
+        "bar_all_rmse": 4990.165794834289,
+        "n_ly": 43,
+        "n_bar": 43,
+        "n_bar_all": 51,
+        "holdout_tons": 118402.05
+      },
+      {
+        "origin": "Wayne",
+        "last_year_rmse": 1008.266086351353,
+        "bar_rmse": 4382.265565039438,
+        "bar_all_rmse": 3666.0904013439467,
+        "n_ly": 51,
+        "n_bar": 51,
+        "n_bar_all": 73,
+        "holdout_tons": 114520.79999999999
+      },
+      {
+        "origin": "Jasper",
+        "last_year_rmse": 2550.705043335435,
+        "bar_rmse": 2886.032175227173,
+        "bar_all_rmse": 2525.4394206905054,
+        "n_ly": 63,
+        "n_bar": 63,
+        "n_bar_all": 83,
+        "holdout_tons": 109277.84
+      },
+      {
+        "origin": "Jackson",
+        "last_year_rmse": 447.1650756040771,
+        "bar_rmse": 3778.901889435998,
+        "bar_all_rmse": 3265.92364368836,
+        "n_ly": 50,
+        "n_bar": 50,
+        "n_bar_all": 67,
+        "holdout_tons": 106299.84
+      },
+      {
+        "origin": "Lawrence",
+        "last_year_rmse": 1324.6448021747458,
+        "bar_rmse": 4739.52483736527,
+        "bar_all_rmse": 3840.040527332442,
+        "n_ly": 42,
+        "n_bar": 42,
+        "n_bar_all": 64,
+        "holdout_tons": 97407.59
+      },
+      {
+        "origin": "Posey",
+        "last_year_rmse": 1905.1430596340722,
+        "bar_rmse": 5798.675215726912,
+        "bar_all_rmse": 5061.91386946636,
+        "n_ly": 32,
+        "n_bar": 32,
+        "n_bar_all": 42,
+        "holdout_tons": 97365.26
+      },
+      {
+        "origin": "Clay",
+        "last_year_rmse": 683.9992282080362,
+        "bar_rmse": 5429.329920405534,
+        "bar_all_rmse": 4767.872166710199,
+        "n_ly": 37,
+        "n_bar": 37,
+        "n_bar_all": 48,
+        "holdout_tons": 92136.75
+      },
+      {
+        "origin": "Henry",
+        "last_year_rmse": 1188.5992011057515,
+        "bar_rmse": 2767.9145271148755,
+        "bar_all_rmse": 2386.602747302524,
+        "n_ly": 52,
+        "n_bar": 52,
+        "n_bar_all": 70,
+        "holdout_tons": 91948.73
+      },
+      {
+        "origin": "Whitley",
+        "last_year_rmse": 435.3912232657832,
+        "bar_rmse": 2579.5455969716922,
+        "bar_all_rmse": 2279.3783595327272,
+        "n_ly": 64,
+        "n_bar": 64,
+        "n_bar_all": 82,
+        "holdout_tons": 90111.73
+      },
+      {
+        "origin": "Marshall",
+        "last_year_rmse": 474.699398667285,
+        "bar_rmse": 3774.8470462852993,
+        "bar_all_rmse": 3198.5326530874368,
+        "n_ly": 61,
+        "n_bar": 61,
+        "n_bar_all": 85,
+        "holdout_tons": 85088.58
+      },
+      {
+        "origin": "Grant",
+        "last_year_rmse": 204.17086875515636,
+        "bar_rmse": 2632.8561893432625,
+        "bar_all_rmse": 2427.58016983504,
+        "n_ly": 85,
+        "n_bar": 85,
+        "n_bar_all": 100,
+        "holdout_tons": 79429.81
+      },
+      {
+        "origin": "Fulton",
+        "last_year_rmse": 1371.6668841604962,
+        "bar_rmse": 5250.740206706454,
+        "bar_all_rmse": 4382.197123590007,
+        "n_ly": 39,
+        "n_bar": 39,
+        "n_bar_all": 56,
+        "holdout_tons": 77097.86
+      },
+      {
+        "origin": "Huntington",
+        "last_year_rmse": 881.3606440686553,
+        "bar_rmse": 2188.119292132353,
+        "bar_all_rmse": 1923.3559061579135,
+        "n_ly": 61,
+        "n_bar": 61,
+        "n_bar_all": 79,
+        "holdout_tons": 66151.89
+      },
+      {
+        "origin": "Morgan",
+        "last_year_rmse": 465.1365991629582,
+        "bar_rmse": 1418.459140190481,
+        "bar_all_rmse": 1364.2630603925393,
+        "n_ly": 68,
+        "n_bar": 68,
+        "n_bar_all": 78,
+        "holdout_tons": 66055.59
+      },
+      {
+        "origin": "Dubois",
+        "last_year_rmse": 417.2143153642115,
+        "bar_rmse": 4023.519948376029,
+        "bar_all_rmse": 3384.7714257719863,
+        "n_ly": 29,
+        "n_bar": 29,
+        "n_bar_all": 41,
+        "holdout_tons": 59188.53
+      },
+      {
+        "origin": "Putnam",
+        "last_year_rmse": 1104.9672703982812,
+        "bar_rmse": 1433.428121550168,
+        "bar_all_rmse": 1314.046820163521,
+        "n_ly": 70,
+        "n_bar": 70,
+        "n_bar_all": 84,
+        "holdout_tons": 58967.04
+      },
+      {
+        "origin": "Greene",
+        "last_year_rmse": 468.64527997032206,
+        "bar_rmse": 1427.0496386351067,
+        "bar_all_rmse": 1286.8059535493417,
+        "n_ly": 52,
+        "n_bar": 52,
+        "n_bar_all": 64,
+        "holdout_tons": 53701.46
+      },
+      {
+        "origin": "Perry",
+        "last_year_rmse": 371.7726295936806,
+        "bar_rmse": 5261.634936005837,
+        "bar_all_rmse": 4706.446050001822,
+        "n_ly": 20,
+        "n_bar": 20,
+        "n_bar_all": 25,
+        "holdout_tons": 48131.96
+      },
+      {
+        "origin": "Clinton",
+        "last_year_rmse": 741.3202885263354,
+        "bar_rmse": 1525.6337197167209,
+        "bar_all_rmse": 1297.8470798293502,
+        "n_ly": 52,
+        "n_bar": 52,
+        "n_bar_all": 72,
+        "holdout_tons": 47055.17
+      },
+      {
+        "origin": "Orange",
+        "last_year_rmse": 240.22213606538006,
+        "bar_rmse": 2152.824116231578,
+        "bar_all_rmse": 1957.9606027142086,
+        "n_ly": 43,
+        "n_bar": 43,
+        "n_bar_all": 52,
+        "holdout_tons": 45103.909999999996
+      },
+      {
+        "origin": "Daviess",
+        "last_year_rmse": 325.47017187304544,
+        "bar_rmse": 2400.582948249735,
+        "bar_all_rmse": 2049.8539925708305,
+        "n_ly": 43,
+        "n_bar": 43,
+        "n_bar_all": 59,
+        "holdout_tons": 44092.86
+      },
+      {
+        "origin": "Scott",
+        "last_year_rmse": 561.1448177815392,
+        "bar_rmse": 1701.6716748113201,
+        "bar_all_rmse": 1625.3409784537107,
+        "n_ly": 52,
+        "n_bar": 52,
+        "n_bar_all": 57,
+        "holdout_tons": 42860.32
+      },
+      {
+        "origin": "Adams",
+        "last_year_rmse": 174.43703369697621,
+        "bar_rmse": 1321.869445570687,
+        "bar_all_rmse": 1110.0183830282133,
+        "n_ly": 40,
+        "n_bar": 40,
+        "n_bar_all": 57,
+        "holdout_tons": 41961.89
+      },
+      {
+        "origin": "Blackford",
+        "last_year_rmse": 858.0268981716405,
+        "bar_rmse": 1622.3686336833919,
+        "bar_all_rmse": 1382.7551238129697,
+        "n_ly": 43,
+        "n_bar": 43,
+        "n_bar_all": 60,
+        "holdout_tons": 41233.51
+      },
+      {
+        "origin": "Randolph",
+        "last_year_rmse": 807.3327748628456,
+        "bar_rmse": 3198.7041784452026,
+        "bar_all_rmse": 2598.1292165632613,
+        "n_ly": 31,
+        "n_bar": 31,
+        "n_bar_all": 47,
+        "holdout_tons": 40240.67
+      },
+      {
+        "origin": "Dearborn",
+        "last_year_rmse": 852.0635061212495,
+        "bar_rmse": 2928.387432203874,
+        "bar_all_rmse": 2507.959745338999,
+        "n_ly": 22,
+        "n_bar": 22,
+        "n_bar_all": 30,
+        "holdout_tons": 39455.73
+      },
+      {
+        "origin": "Wells",
+        "last_year_rmse": 512.201379481603,
+        "bar_rmse": 1499.4979576734609,
+        "bar_all_rmse": 1191.042807124881,
+        "n_ly": 42,
+        "n_bar": 42,
+        "n_bar_all": 67,
+        "holdout_tons": 34726.12
+      },
+      {
+        "origin": "Jennings",
+        "last_year_rmse": 314.3022879179791,
+        "bar_rmse": 1535.58312987848,
+        "bar_all_rmse": 1441.6547250594367,
+        "n_ly": 42,
+        "n_bar": 42,
+        "n_bar_all": 48,
+        "holdout_tons": 33493.28
+      },
+      {
+        "origin": "Steuben",
+        "last_year_rmse": 426.3005092785031,
+        "bar_rmse": 1313.8956072989454,
+        "bar_all_rmse": 1093.7130159003125,
+        "n_ly": 45,
+        "n_bar": 45,
+        "n_bar_all": 65,
+        "holdout_tons": 32967.85
+      },
+      {
+        "origin": "Decatur",
+        "last_year_rmse": 437.49929081935886,
+        "bar_rmse": 2143.3757157946193,
+        "bar_all_rmse": 1895.2914858078627,
+        "n_ly": 43,
+        "n_bar": 43,
+        "n_bar_all": 55,
+        "holdout_tons": 31228.100000000002
+      },
+      {
+        "origin": "Pike",
+        "last_year_rmse": 1339.8250418506138,
+        "bar_rmse": 2890.5168362459726,
+        "bar_all_rmse": 2443.035364170077,
+        "n_ly": 20,
+        "n_bar": 20,
+        "n_bar_all": 28,
+        "holdout_tons": 30259.1
+      },
+      {
+        "origin": "Miami",
+        "last_year_rmse": 417.55262500793884,
+        "bar_rmse": 1121.7220712730314,
+        "bar_all_rmse": 938.7483138716246,
+        "n_ly": 49,
+        "n_bar": 49,
+        "n_bar_all": 70,
+        "holdout_tons": 29929.21
+      },
+      {
+        "origin": "Fayette",
+        "last_year_rmse": 710.9289401816507,
+        "bar_rmse": 1180.4956760770347,
+        "bar_all_rmse": 1058.6703680044266,
+        "n_ly": 41,
+        "n_bar": 41,
+        "n_bar_all": 51,
+        "holdout_tons": 29489.8
+      },
+      {
+        "origin": "Jay",
+        "last_year_rmse": 905.6690794497891,
+        "bar_rmse": 1861.1647145478737,
+        "bar_all_rmse": 1468.4798867141842,
+        "n_ly": 28,
+        "n_bar": 28,
+        "n_bar_all": 45,
+        "holdout_tons": 29304.55
+      },
+      {
+        "origin": "LaGrange",
+        "last_year_rmse": 402.67363412925016,
+        "bar_rmse": 1157.868153462752,
+        "bar_all_rmse": 979.7371960025235,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 49,
+        "holdout_tons": 27418.58
+      },
+      {
+        "origin": "Harrison",
+        "last_year_rmse": 318.8325165720777,
+        "bar_rmse": 1647.9532012315233,
+        "bar_all_rmse": 1514.449983677351,
+        "n_ly": 38,
+        "n_bar": 38,
+        "n_bar_all": 45,
+        "holdout_tons": 25801.28
+      },
+      {
+        "origin": "Rush",
+        "last_year_rmse": 393.4662651933939,
+        "bar_rmse": 1611.8725838584528,
+        "bar_all_rmse": 1421.9280939906453,
+        "n_ly": 42,
+        "n_bar": 42,
+        "n_bar_all": 54,
+        "holdout_tons": 25074.5
+      },
+      {
+        "origin": "Washington",
+        "last_year_rmse": 556.0479425501777,
+        "bar_rmse": 1481.2296193402376,
+        "bar_all_rmse": 1368.9088863175923,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 41,
+        "holdout_tons": 24883.23
+      },
+      {
+        "origin": "White",
+        "last_year_rmse": 564.5407699028476,
+        "bar_rmse": 1133.5706261362309,
+        "bar_all_rmse": 889.4777240122123,
+        "n_ly": 40,
+        "n_bar": 40,
+        "n_bar_all": 65,
+        "holdout_tons": 23892.07
+      },
+      {
+        "origin": "Newton",
+        "last_year_rmse": 445.771315011034,
+        "bar_rmse": 1331.9124117689553,
+        "bar_all_rmse": 1112.9132230872763,
+        "n_ly": 30,
+        "n_bar": 30,
+        "n_bar_all": 43,
+        "holdout_tons": 22616.11
+      },
+      {
+        "origin": "Pulaski",
+        "last_year_rmse": 932.6975520428189,
+        "bar_rmse": 1083.9327850561276,
+        "bar_all_rmse": 1126.0381589729197,
+        "n_ly": 30,
+        "n_bar": 30,
+        "n_bar_all": 45,
+        "holdout_tons": 22262.69
+      },
+      {
+        "origin": "Martin",
+        "last_year_rmse": 179.6730785554022,
+        "bar_rmse": 1308.9081992939787,
+        "bar_all_rmse": 1097.4259892884625,
+        "n_ly": 33,
+        "n_bar": 33,
+        "n_bar_all": 47,
+        "holdout_tons": 20034.97
+      },
+      {
+        "origin": "Ripley",
+        "last_year_rmse": 63.07765982473923,
+        "bar_rmse": 1266.4460670774354,
+        "bar_all_rmse": 1078.4119989381777,
+        "n_ly": 29,
+        "n_bar": 29,
+        "n_bar_all": 40,
+        "holdout_tons": 14468.86
+      },
+      {
+        "origin": "Tipton",
+        "last_year_rmse": 267.218500669396,
+        "bar_rmse": 397.9010412374204,
+        "bar_all_rmse": 333.3361067631628,
+        "n_ly": 49,
+        "n_bar": 49,
+        "n_bar_all": 71,
+        "holdout_tons": 14452.76
+      },
+      {
+        "origin": "Fountain",
+        "last_year_rmse": 225.5687101375176,
+        "bar_rmse": 642.0502355803294,
+        "bar_all_rmse": 546.9568372915829,
+        "n_ly": 29,
+        "n_bar": 29,
+        "n_bar_all": 40,
+        "holdout_tons": 14421.06
+      },
+      {
+        "origin": "Starke",
+        "last_year_rmse": 453.21474189552634,
+        "bar_rmse": 727.3767511372754,
+        "bar_all_rmse": 588.8843261705009,
+        "n_ly": 35,
+        "n_bar": 35,
+        "n_bar_all": 54,
+        "holdout_tons": 14288.119999999999
+      },
+      {
+        "origin": "Parke",
+        "last_year_rmse": 127.6916835531925,
+        "bar_rmse": 662.1596231044032,
+        "bar_all_rmse": 614.2517225147475,
+        "n_ly": 37,
+        "n_bar": 37,
+        "n_bar_all": 43,
+        "holdout_tons": 12506.890000000001
+      },
+      {
+        "origin": "Carroll",
+        "last_year_rmse": 106.11509911821958,
+        "bar_rmse": 438.7858959841075,
+        "bar_all_rmse": 400.0953402816805,
+        "n_ly": 46,
+        "n_bar": 46,
+        "n_bar_all": 56,
+        "holdout_tons": 11705.1
+      },
+      {
+        "origin": "Owen",
+        "last_year_rmse": 136.46550681954452,
+        "bar_rmse": 483.9130325979326,
+        "bar_all_rmse": 457.03029020689024,
+        "n_ly": 33,
+        "n_bar": 33,
+        "n_bar_all": 37,
+        "holdout_tons": 9749.76
+      },
+      {
+        "origin": "Franklin",
+        "last_year_rmse": 978.3836239601178,
+        "bar_rmse": 527.9190917693458,
+        "bar_all_rmse": 429.83989642259735,
+        "n_ly": 21,
+        "n_bar": 21,
+        "n_bar_all": 32,
+        "holdout_tons": 8900.85
+      },
+      {
+        "origin": "Crawford",
+        "last_year_rmse": 160.69840154579947,
+        "bar_rmse": 417.1017813225399,
+        "bar_all_rmse": 387.9147516507156,
+        "n_ly": 32,
+        "n_bar": 32,
+        "n_bar_all": 37,
+        "holdout_tons": 7754.08
+      },
+      {
+        "origin": "Brown",
+        "last_year_rmse": 247.56403768428373,
+        "bar_rmse": 357.96844759879735,
+        "bar_all_rmse": 375.9638199459045,
+        "n_ly": 22,
+        "n_bar": 22,
+        "n_bar_all": 31,
+        "holdout_tons": 6668.21
+      },
+      {
+        "origin": "Switzerland",
+        "last_year_rmse": 169.5595586414009,
+        "bar_rmse": 731.2236085607013,
+        "bar_all_rmse": 686.8682780143344,
+        "n_ly": 15,
+        "n_bar": 15,
+        "n_bar_all": 17,
+        "holdout_tons": 6130.94
+      },
+      {
+        "origin": "Benton",
+        "last_year_rmse": 253.09951560601613,
+        "bar_rmse": 448.420489207287,
+        "bar_all_rmse": 342.7271549267197,
+        "n_ly": 14,
+        "n_bar": 14,
+        "n_bar_all": 24,
+        "holdout_tons": 4856.12
+      },
+      {
+        "origin": "Union",
+        "last_year_rmse": 54.0620497206682,
+        "bar_rmse": 108.42919359074472,
+        "bar_all_rmse": 92.08989868297415,
+        "n_ly": 15,
+        "n_bar": 15,
+        "n_bar_all": 22,
+        "holdout_tons": 1896.16
+      },
+      {
+        "origin": "Warren",
+        "last_year_rmse": 71.78113496151782,
+        "bar_rmse": 238.34172412895614,
+        "bar_all_rmse": 204.19290241890508,
+        "n_ly": 11,
+        "n_bar": 11,
+        "n_bar_all": 15,
+        "holdout_tons": 1798.95
+      },
+      {
+        "origin": "Ohio",
+        "last_year_rmse": 18.161798877356247,
+        "bar_rmse": 85.46568733524832,
+        "bar_all_rmse": 77.06757558091364,
+        "n_ly": 13,
+        "n_bar": 13,
+        "n_bar_all": 16,
+        "holdout_tons": 716.32
+      }
+    ]
+  },
+  "confirm_in_train": false,
+  "confirm_in_j": false,
+  "random_split": false,
+  "train_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "holdout_years": [
+    2024
+  ],
+  "confirm_years": [
+    2025
+  ],
+  "origin_pop_cancels": true,
+  "last_year_beats_bar": true,
+  "fetch_meta": {
+    "n_rows": 27926,
+    "n_counties": 92,
+    "n_facilities": 157,
+    "xlsx": "data/raw/reporting_sw_quarterly_report_2025.xlsx",
+    "xlsx_sha256": "e4a8ece1b09c478498b9d55454b1700fbc2856ae2c30280d2e532777a94f2023",
+    "live_retrac_login": false,
+    "n_indiana_source_rows": 28034,
+    "n_out_of_state": 31965,
+    "type_totals_tons": {
+      "Municipal Solid Waste": 52967573.73000037,
+      "Construction/Demolition": 6239801.169999994,
+      "Foundry": 3433001.9199999995,
+      "Coal Ash": 7491793.970000002,
+      "Flue Gas Desulfurization Waste": 9473724.160000002,
+      "Other Non-Municipal": 19193389.739999857,
+      "Alternate Daily Cover/Reuse": 5888085.070000005
+    },
+    "n_cells": 27926
+  }
+}
