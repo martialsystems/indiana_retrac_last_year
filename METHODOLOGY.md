@@ -52,9 +52,9 @@ Primary window: 2021 Q1 through 2025 Q4.
 
 Lead with holdout RMSE in tons on the origin-facility-quarter cells that both last year and the bar can score (intersection: last year present). MAE second. Per-county table required. A 7/N last-year-closer count is not the method.
 
-Also print origin-total RMSE. Last year can miss the county total. The bar cannot: it is scaled to the observed origin-quarter total, so origin-total bar RMSE is 0 by construction.
+Also print origin-total RMSE. Last year can miss the county total. The bar cannot: it is scaled to the observed origin-quarter total, so origin-total bar RMSE is 0 by construction. That line is the second answer, not a counter-finding to the cell win.
 
-Win: last-year RMSE strictly less than mileage-pop RMSE on that intersection. Bar RMSE on all reported holdout cells is a second line.
+Win: last-year RMSE strictly less than mileage-pop RMSE on that intersection. Bar RMSE on all reported holdout cells is a second line. Do not average cell RMSE with origin-total RMSE.
 
 ## Figures
 
@@ -62,6 +62,10 @@ Win: last-year RMSE strictly less than mileage-pop RMSE on that intersection. Ba
 2. Per-county RMSE bars for the largest origins. Caption: county error, not a hauling route.
 
 Two figures max.
+
+## Residual
+
+Great-circle miles, not a truck path. Sixty of the live facilities sit on host-county centroids; that inflates bar error on those rows and does not create the last-year win on the rest. Three 2024-only facilities get bar mass 0 because J is frozen on 2021 through 2023. Confirmation cannot reopen the holdout.
 
 ## Fixture
 

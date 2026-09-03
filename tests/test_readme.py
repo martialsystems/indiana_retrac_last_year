@@ -19,8 +19,15 @@ def test_readme_opens_with_the_question() -> None:
     bar = live["holdout"]["bar"]["rmse_tons"]
     assert f"{ly:.1f}" in text
     assert f"{bar:.1f}" in text
+    assert "Two answers." in text
+    assert "wins the assignment" in text
+    assert "loses the county total" in text
+    assert "not a counter-finding" in text
+    assert "Do not average it" in text
+    assert "Marion" in text
+    assert "Lake" in text
     if live["last_year_beats_bar"]:
-        assert "yes" in text.lower()
+        assert "wins the assignment" in text
     else:
         assert re.search(r"\bno\b", text, re.I)
     assert "origin pop cancels" in text.lower() or "origin population cancels" in text.lower()
