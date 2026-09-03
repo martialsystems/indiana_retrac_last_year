@@ -2,7 +2,7 @@
 
 Do last year’s Re-TRAC county-to-facility shipments beat a mileage-plus-population assignment on held-out quarters?
 
-Yes on origin-facility-quarter cells. Locked from `logs/in_live/stage_c_report.json`. Holdout last-year RMSE is 6504.7 tons against mileage-plus-population 16633.0 on the 4370 cells where last year is present. MAE is 1144.0 against 4455.3. Last year misses origin totals: origin-quarter RMSE 23313.3 tons against 0.0 for the bar, which is scaled to the observed county total. That split is the product. Do not average it away. Origin population cancels inside each county’s shares; the miles term is the assignment. Confirmation 2025 last-year RMSE 8059.0 against 16227.2 does not reverse the holdout. Fixture skill does not rescue live. Three 2024-only facilities get bar mass 0.
+Yes on origin-facility-quarter cells. Locked `5800fc3`. Holdout last-year RMSE is 6504.7 tons against mileage-plus-population 16633.0 on the 4370 cells where last year is present. MAE is 1144.0 against 4455.3. Last year misses origin totals: origin-quarter RMSE 23313.3 tons against 0.0 for the bar, which is scaled to the observed county total. That split is the product. Do not average it away. Origin population cancels inside each county’s shares; the miles term is the assignment. Confirmation 2025 last-year RMSE 8059.0 against 16227.2 does not reverse the holdout. Fixture skill does not rescue live. Three 2024-only facilities get bar mass 0.
 
 Science lock: public IDEM waste-received XLSX 2021 through 2025 (`e4a8ece1b09c…`). Not a live Re-TRAC login. Facility set J is 152 train-era receivers. 97 facilities sit on IndianaMap coordinates; 60 use the host-county centroid.
 
