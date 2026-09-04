@@ -8,7 +8,7 @@ Contestant is last year, same quarter. Bar is origin population over great-circl
 
 `retracforge/` is the GraphForge pin.
 
-Readable index is this repo README. Gist `66b896b0` stays the weather pointer.
+Readable lock is this README. Index gist `66b896b0` lists Re-TRAC. Lane gist `1b6d686320adea674727af588e77bf80`. Stay off Site / `indiana_wx_pages`.
 
 ## Verify
 
