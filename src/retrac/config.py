@@ -41,6 +41,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 INDEX_GIST = "https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3"
 
 LIVE_SCATTER_SUBTITLE = "Holdout tons. Last year vs mileage-plus-population. Tons of error, not a landfill siting."
-LIVE_BARS_SUBTITLE = "Holdout RMSE in tons. Largest origin counties. County error, not a hauling route."
+LIVE_BARS_SUBTITLE = (
+    "Two answers. Do not average. Cell assignment RMSE is last year vs mileage-plus-population. "
+    "Origin-quarter total RMSE is last year vs the bar, which is 0 by construction."
+)
 FIXTURE_SCATTER_SUBTITLE = "Fixture planted last-year persistence. Does not rescue live."
 FIXTURE_BARS_SUBTITLE = "Fixture RMSE. Does not rescue live."

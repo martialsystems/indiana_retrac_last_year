@@ -12,9 +12,9 @@ Holdout n=5754 origin-facility-quarter cells (2024 Q1 through Q4). Train: 2021 Q
 
 Figure 1. Holdout tons. Last year RMSE 6504.7 vs mileage-plus-population 16633.0. Tons of error, not a landfill siting.
 
-![Figure 2. Largest-origin RMSE](logs/in_live/rmse_bars.png)
+![Figure 2. Two-answer RMSE](logs/in_live/rmse_bars.png)
 
-Figure 2. Holdout RMSE in tons. Largest origin counties. County error, not a hauling route.
+Figure 2. Two answers. Do not average. Panel A: cell assignment RMSE, last year 6,504.7 vs mileage-plus-population 16,633.0. Panel B: origin-quarter total RMSE, last year 23,313.3 vs bar 0.0.
 
 ## Live skill (held-out quarters)
 

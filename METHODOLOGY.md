@@ -59,7 +59,7 @@ Win: last-year RMSE strictly less than mileage-pop RMSE on that intersection. Ba
 ## Figures
 
 1. Holdout scatter: last year and the bar vs observed tons on the intersection, 1:1. Caption: tons of error, not a landfill siting.
-2. Per-county RMSE bars for the largest origins. Caption: county error, not a hauling route.
+2. Two-answer RMSE bars. Panel A: cell assignment. Panel B: origin-quarter totals. Caption: two answers; do not average.
 
 Two figures max.
 
